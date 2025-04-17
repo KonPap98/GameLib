@@ -12,18 +12,26 @@
                 <RowDefinition Height="40"/>
             </Grid.RowDefinitions>
             <Menu>
-                <MenuItem Header="File" FontSize="16">
-                    <MenuItem Header="FileExit "/>
+                <MenuItem Header="Menu" FontSize="16">
+                    <MenuItem Header="Exit"/>
                 </MenuItem>
-                <MenuItem Header="Edit" FontSize="16"/>
-            </Menu>
+            <MenuItem Header="Library" FontSize="16">
+                <MenuItem Header="Add games" Click="AddGames_Click"/>
+                <MenuItem Header="Search games"/>
+            </MenuItem>
+            <MenuItem Header="Export" FontSize="16">
+                <MenuItem Header="Export library as text"/>
+                <MenuItem Header="Export library as csv"/>
+            </MenuItem>
+            <MenuItem Header="Help" FontSize="16">
+                <MenuItem Header="Help page..."/>
+            </MenuItem>
+        </Menu>
             <Grid Grid.Row="1">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="Auto"/>
-                    <ColumnDefinition Width="Auto"/>
-                </Grid.ColumnDefinitions>
-            <Button Name="Searchbt" Content="Search" Width="50" Margin="5" Click="Searchbt_Click"/>
-            <TextBox Name ="SearchBox" Width="150" Grid.Column="1" Margin="5"/>
-            </Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+        </Grid>
         </Grid>
 </UserControl>
