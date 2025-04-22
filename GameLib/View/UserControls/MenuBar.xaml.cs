@@ -56,11 +56,11 @@ namespace GameLib.View.UserControls
                     }
                     catch (UnauthorizedAccessException ex)
                     {
-                        Console.WriteLine($"Access denied to folder: {folder} - {ex.Message}");
+                        Trace.WriteLine($"Access denied to folder: {folder} - {ex.Message}");
                     }
                     catch (Exception ex)
                     {
-                        Console.WriteLine($"Error accessing folder: {folder} - {ex.Message}");
+                        Trace.WriteLine($"Error accessing folder: {folder} - {ex.Message}");
                     }
                 }
             }
